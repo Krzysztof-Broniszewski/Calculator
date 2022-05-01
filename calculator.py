@@ -19,6 +19,7 @@ while True :
             break
         if num == "reset" :
             reset = True
+            firstNumber = None
             continue
         if num == "+" :
             secondNumber = int (input("Podaj drugą liczbę : "))
