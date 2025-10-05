@@ -1,9 +1,9 @@
-# >>> Replace <USER>/<REPO> (and notebook path if different) before running this cell <<<
+# One-cell generator: README.md for the refactored CLI calculator (EN)
+README = """# Refactored CLI Calculator (Python)
 
-readme = """# Refactored CLI Calculator (Python)
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](
-https://colab.research.google.com/github/<USER>/<REPO>/blob/main/notebooks/01_calculator.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1KakZBEuOUkq8fIIrNX5Ixwp-PjPdiUpV?usp=sharing)
+<br>
+**Direct link:** https://colab.research.google.com/drive/1KakZBEuOUkq8fIIrNX5Ixwp-PjPdiUpV?usp=sharing
 
 A small, robust command-line calculator that supports chained operations and safe input handling.
 This repository includes a Colab notebook for one-click execution and a plain Python script for local use.
@@ -14,27 +14,26 @@ This repository includes a Colab notebook for one-click execution and a plain Py
 - **Operations:** `+`, `-`, `*`, `/`, `**`
 - **Chained mode:** the result becomes the next first number
 - **User commands:** `reset`, `exit`
-- **Validation:** invalid numbers, division by zero, extreme exponents guarded
+- **Validation:** guards for invalid numbers, division by zero, and extreme exponents
 - **No external dependencies** (pure Python 3.10+)
 
 ---
 
-## Run in Colab (recommended for quick review)
-1. Click the **Open in Colab** badge above.  
-2. In Colab, choose **Runtime → Run all**.  
+## Run in Colab (quick review)
+1. Click the **Open in Colab** badge (or the direct link) above.  
+2. In Colab choose **Runtime → Run all**.  
 3. The notebook will:
-   - show the calculator code,
+   - display the calculator code,
    - (optionally) write `src/calculator.py`,
-   - and run the interactive CLI inside Colab (you'll be prompted for input).
+   - run the interactive CLI (you can respond to `input()` prompts in the cell output area).
 
-> Tip: Colab handles `input()` in the cell output; answer prompts directly in the notebook UI.
+> Tip: If the notebook writes `src/calculator.py`, you can download it or push it to your repo.
 
 ---
 
 ## Run locally
 ```bash
-# 1) (Optional) create a clean environment
-#    conda/mamba example:
+# 1) (Optional) create a clean environment (conda/mamba example)
 mamba create -n calc -c conda-forge python=3.11
 mamba activate calc
 
