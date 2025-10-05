@@ -39,3 +39,12 @@ mamba activate calc
 
 # 2) Run the calculator
 python src/calculator.py
+
+Podaj pierwszą liczbę: 10
+Podaj działanie [+ - * / **] lub 'reset' / 'exit': +
+Podaj drugą liczbę: 5
+= 15.0
+Podaj działanie [+ - * / **] lub 'reset' / 'exit': *
+Podaj drugą liczbę: 3
+= 45.0
+Podaj działanie [+ - * / **] lub 'reset' / 'exit': exit
